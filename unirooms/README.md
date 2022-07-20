@@ -5,5 +5,5 @@ Il progetto si pone di creare delle aule studio virtuali suddivise per corsi di 
 # Moduli utilizzati
 
 -tailwindcss        
--postcss
+-postcss 
 -autoprefixer
