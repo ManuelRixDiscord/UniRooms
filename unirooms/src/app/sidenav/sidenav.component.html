@@ -4,31 +4,31 @@
         <!-- Home/chatprivate-amici/gruppi/impostazioni -->
         <ul class="nav-list flex flex-col gap-8 mx-3">
             <li class="w-6 relative opened">
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" [routerLink]="['/']">
                     <img [src]="homeIcon" alt="" class="icon-fill nav-items opened">
                 </a>
             </li>
             <li class="w-6 relative">
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" [routerLink]="['/chats']">
                     <img [src]="chatIcon" alt="" class="icon-fill nav-items">
                 </a>
             </li>
             <li class="w-6 relative">
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" [routerLink]="['/groups']">
                     <img [src]="groupsIcon" alt="" class="icon-fill nav-items">
                 </a>
             </li>
             <li class="w-6 relative">
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" [routerLink]="['/settings']">
                     <img [src]="settingsIcon" alt="" class="icon-fill nav-items">
                 </a>
             </li>
         </ul>
     </div>
     <!-- TODO aggiustare il border -->
-    <div class="user ml-[.40rem] flex flex-row self-start items-center justify-between mt-auto mb-10">
-        <img [src]="userIcon" alt="" class="user-img w-9 rounded-full">
+    <div class="user ml-1 flex flex-row self-start items-center justify-between mt-auto mb-10">
+        <img [src]="userIcon" alt="" class="user-img w-10 rounded-full">
         <h1 class="userName hidden text-sm">Pino Peppino</h1>
-        <button class="logOut hidden bg-eerieBlack text-white h-8 px-4 rounded-3xl text-sm">Logout</button>
+        <button class="logOut hidden bg-eerieBlack text-white h-8 px-4 my-1 mr-1 rounded-3xl text-sm">Logout</button>
     </div>
 </div>
