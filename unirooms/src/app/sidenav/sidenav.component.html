@@ -1,8 +1,8 @@
-<div class="side-nav flex flex-col gap-4 fixed top-0 left-0 w-12 h-screen bg-eerieBlack rounded-3xl">
-    <img src="" alt="" class="logo">
+<div class="side-nav flex flex-col gap-12 fixed top-0 left-0 w-12 h-screen bg-eerieBlack rounded-3xl">
+    <img [src]="logoIcon" alt="" class="logo rounded-full mt-3">
     <div class="nav-menu flex flex-col">
         <!-- Home/chatprivate-amici/gruppi/impostazioni -->
-        <ul class="nav-list flex flex-col gap-4 mx-3">
+        <ul class="nav-list flex flex-col gap-8 mx-3">
             <li class="w-6 relative opened">
                 <a href="javascript:void(0)">
                     <img [src]="homeIcon" alt="" class="icon-fill nav-items opened">
@@ -13,7 +13,11 @@
                     <img [src]="chatIcon" alt="" class="icon-fill nav-items">
                 </a>
             </li>
-            <li>Gruppi</li>
+            <li class="w-6 relative">
+                <a href="javascript:void(0)">
+                    <img [src]="groupsIcon" alt="" class="icon-fill nav-items">
+                </a>
+            </li>
             <li class="w-6 relative">
                 <a href="javascript:void(0)">
                     <img [src]="settingsIcon" alt="" class="icon-fill nav-items">
@@ -21,7 +25,10 @@
             </li>
         </ul>
     </div>
-    <div class="user w-6 border rounded-full border-white">
-        <img [src]="" alt="" class="user-img">
+    <!-- TODO aggiustare il border -->
+    <div class="user ml-[.40rem] flex flex-row self-start items-center justify-between mt-auto mb-10">
+        <img [src]="userIcon" alt="" class="user-img w-9 rounded-full">
+        <h1 class="userName hidden text-sm">Pino Peppino</h1>
+        <button class="logOut hidden bg-eerieBlack text-white h-8 px-4 rounded-3xl text-sm">Logout</button>
     </div>
 </div>

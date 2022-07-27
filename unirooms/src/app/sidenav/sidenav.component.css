@@ -16,3 +16,18 @@ li.opened::after
     right: -.8rem;
     top: .3rem;
 }
+
+.user.active
+{
+    width: 16rem;
+    border: 1px solid #19181b;
+    border-radius: 100px;
+    padding-right: .2rem;
+}
+.user.active .userName,
+.user.active .logOut
+{
+    display: block;
+}
+
+
