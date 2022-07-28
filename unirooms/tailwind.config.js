@@ -7,7 +7,9 @@ module.exports = {
       {
         eerieBlack: "#19181b",
         floralWhite: "#fffdf2",
-        celadronBlue: "#0681b1"
+        celadronBlue: "#0681b1",
+        raisinBlack: "#28262B",
+        carolinaBlue: "#089DD9"
       }
     },
   },

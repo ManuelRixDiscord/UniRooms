@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  newIcon: string = "../assets/images/newIcon.svg";
+  joinIcon: string = "../assets/images/joinIcon.svg";
+
   constructor() { }
 
   ngOnInit(): void {
