@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatsComponent implements OnInit {
 
+  pfpPaperino: string = "../assets/images/paperinopfp.jpg";
+  pfpPippo: string = "../assets/images/pippopfp.jpg";
+
   constructor() { }
 
   ngOnInit(): void {

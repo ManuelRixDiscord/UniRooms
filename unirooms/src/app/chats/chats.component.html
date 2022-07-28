@@ -1,1 +1,22 @@
-<p>chats works!</p>
+<div class="chats pl-16 pt-2 flex flex-row h-screen bg-eerieBlack">
+    <div class="recent-chat flex flex-col text-floralWhite border-r-[1px] border-[rgba(255,255,255,.2)]">
+        <div class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[30ch] flex flex-row items-center hover:bg-raisinBlack">
+            <img [src]="pfpPaperino" alt="" class="rounded-full w-9 h-9 mr-2">
+            <!-- lmi = last message info -->
+            <div class="lmi flex flex-col"> 
+                <h1>Paolino Paperino</h1>
+                <p class="text-sm opacity-50">Ciao</p>
+            </div>
+            
+        </div>
+        <div class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[30ch] flex flex-row items-center hover:bg-raisinBlack">
+            <img [src]="pfpPippo" alt="" class="rounded-full w-9 h-9 mr-2">
+            <div class="lmi flex flex-col">
+                <h1>Pippo Goofy</h1>
+                <p class="text-sm opacity-50">Ciauuu</p>
+            </div>
+        </div>
+    </div>
+    <div class="chat flex flex-col">
+    </div>
+</div>
