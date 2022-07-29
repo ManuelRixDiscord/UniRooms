@@ -1,7 +1,7 @@
 <div class="chats pl-16 flex flex-row h-screen bg-eerieBlack">
     <div class="recent-chat pt-2 flex flex-col text-floralWhite border-r-[1px] border-[rgba(255,255,255,.2)]">
         <div
-            class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[30ch] flex flex-row items-center hover:bg-raisinBlack">
+            class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[40ch] flex flex-row items-center hover:bg-raisinBlack">
             <img [src]="pfpPaperino" alt="" class="rounded-full w-9 h-9 mr-2">
             <!-- lmi = last message info -->
             <div class="lmi flex flex-col">
@@ -11,7 +11,7 @@
 
         </div>
         <div
-            class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[30ch] flex flex-row items-center hover:bg-raisinBlack">
+            class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[40ch] flex flex-row items-center hover:bg-raisinBlack">
             <img [src]="pfpPippo" alt="" class="rounded-full w-9 h-9 mr-2">
             <div class="lmi flex flex-col">
                 <h1>Pippo Goofy</h1>
@@ -21,7 +21,7 @@
     </div>
     <div class="chat flex flex-col w-full text-floralWhite gap-3">
         <div class="header-receiver flex flex-row items-center justify-evenly 
-        border-b border-[rgba(255,255,255,.2)] pb-[.65rem] bg-raisinBlack pt-2">
+        border-b border-[rgba(255,255,255,.2)] pb-[.7rem] bg-raisinBlack pt-2">
             <img [src]="pfpPippo" alt="" class="rounded-full w-11 h-11">
             <h1 class="text-lg font-semibold">Pippo Goofy</h1>
             <div class="receiver-action flex flex-row gap-4">
@@ -34,13 +34,15 @@
         <div class="receiver-message bg-raisinBlack max-w-max px-5 py-2 rounded-lg mx-3">
             <p>Hellooo!</p>
         </div>
-        <div class="sender-message bg-celadronBlue max-w-max px-5 py-2 self-end rounded-lg mx-3">
+        <div
+            class="sender-message bg-celadronBlue max-w-max px-5 py-2 self-end rounded-lg mx-3 selection:bg-gray-400 selection:text-black">
             <p>Ciauuu</p>
         </div>
         <div class="chat-text fixed bottom-0 flex flex-row w-full border-t py-4 px-4 gap-5">
             <button><img [src]="smile" alt="" class="invert w-6"></button>
             <button><img [src]="allegati" alt="" class="invert w-6"></button>
-            <input type="text" class="bg-transparent border rounded-md w-3/6 p-1 ml-8" name="" id="" placeholder="Scrivi messaggio">
+            <input type="text" class="bg-transparent border rounded-md w-3/5 p-1 ml-8" name="" id=""
+                placeholder="Scrivi messaggio">
             <button><img [src]="sendIcon" alt="" class="invert w-6"></button>
         </div>
     </div>
