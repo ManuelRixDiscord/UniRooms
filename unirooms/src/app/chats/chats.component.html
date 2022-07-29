@@ -1,15 +1,17 @@
 <div class="chats pl-16 pt-2 flex flex-row h-screen bg-eerieBlack">
     <div class="recent-chat flex flex-col text-floralWhite border-r-[1px] border-[rgba(255,255,255,.2)]">
-        <div class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[30ch] flex flex-row items-center hover:bg-raisinBlack">
+        <div
+            class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[30ch] flex flex-row items-center hover:bg-raisinBlack">
             <img [src]="pfpPaperino" alt="" class="rounded-full w-9 h-9 mr-2">
             <!-- lmi = last message info -->
-            <div class="lmi flex flex-col"> 
+            <div class="lmi flex flex-col">
                 <h1>Paolino Paperino</h1>
                 <p class="text-sm opacity-50">Ciao</p>
             </div>
-            
+
         </div>
-        <div class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[30ch] flex flex-row items-center hover:bg-raisinBlack">
+        <div
+            class="user border-b-[1px] px-2 cursor-pointer border-[rgba(255,255,255,.2)] h-14 w-[30ch] flex flex-row items-center hover:bg-raisinBlack">
             <img [src]="pfpPippo" alt="" class="rounded-full w-9 h-9 mr-2">
             <div class="lmi flex flex-col">
                 <h1>Pippo Goofy</h1>
@@ -17,6 +19,24 @@
             </div>
         </div>
     </div>
-    <div class="chat flex flex-col">
+    <div class="chat flex flex-col w-full text-floralWhite gap-3">
+        <div class="header-receiver flex flex-row items-center justify-evenly 
+        border-b border-[rgba(255,255,255,.2)] pb-2">
+            <img [src]="pfpPippo" alt="" class="rounded-full w-11 h-11">
+            <h1 class="text-lg font-semibold">Pippo Goofy</h1>
+            <div class="receiver-action flex flex-row gap-4">
+                <button class="videocall"><img [src]="camIcon" alt="" class="invert w-6"></button>
+                <button class="call"><img [src]="callIcon" alt="" class="invert w-5 "></button>
+                <button class="option"><img [src]="optionIcon" alt="" class="invert w-6"></button>
+            </div>
+        </div>
+        <!-- TODO before per i messaggi -->
+        <div class="receiver-message bg-raisinBlack max-w-max px-5 py-2 rounded-lg mx-3">
+            <p>Hellooo!</p>
+        </div>
+        <div class="sender-message bg-celadronBlue max-w-max px-5 py-2 self-end rounded-lg mx-3">
+            <p>Ciauuu</p>
+        </div>
+
     </div>
 </div>
