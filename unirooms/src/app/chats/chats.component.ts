@@ -12,6 +12,9 @@ export class ChatsComponent implements OnInit {
   callIcon: string = "../assets/images/callingIcon.svg";
   camIcon: string = "../assets/images/camIcon.svg";
   optionIcon: string = "../assets/images/optionIcon.svg";
+  smile: string = "../assets/images/smile.svg";
+  sendIcon: string = "../assets/images/sendIcon.svg";
+  allegati: string = "../assets/images/allegati.svg";
 
   constructor() { }
 

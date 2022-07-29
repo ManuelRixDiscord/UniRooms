@@ -21,7 +21,7 @@
     </div>
     <div class="chat flex flex-col w-full text-floralWhite gap-3">
         <div class="header-receiver flex flex-row items-center justify-evenly 
-        border-b border-[rgba(255,255,255,.2)] pb-2">
+        border-b border-[rgba(255,255,255,.2)] pb-[.65rem] bg-raisinBlack">
             <img [src]="pfpPippo" alt="" class="rounded-full w-11 h-11">
             <h1 class="text-lg font-semibold">Pippo Goofy</h1>
             <div class="receiver-action flex flex-row gap-4">
@@ -37,6 +37,11 @@
         <div class="sender-message bg-celadronBlue max-w-max px-5 py-2 self-end rounded-lg mx-3">
             <p>Ciauuu</p>
         </div>
-
+        <div class="chat-text fixed bottom-0 flex flex-row w-full border-t py-4 px-4 gap-5">
+            <button><img [src]="smile" alt="" class="invert w-6"></button>
+            <button><img [src]="allegati" alt="" class="invert w-6"></button>
+            <input type="text" class="bg-transparent border rounded-md w-3/6 p-1 ml-8" name="" id="" placeholder="Scrivi messaggio">
+            <button><img [src]="sendIcon" alt="" class="invert w-6"></button>
+        </div>
     </div>
 </div>
