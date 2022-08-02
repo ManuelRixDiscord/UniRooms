@@ -29,6 +29,6 @@
     <div class="user ml-1 flex flex-row self-start items-center justify-between mt-auto mb-10">
         <img [src]="userIcon" alt="" class="user-img w-10 rounded-full">
         <h1 class="userName hidden text-sm">Pino Peppino</h1>
-        <button class="logOut hidden bg-eerieBlack text-white h-8 px-4 my-1 mr-1 rounded-3xl text-sm">Logout</button>
+        <button [routerLink]="['/user-area']" class="logOut hidden bg-eerieBlack text-white h-8 px-4 my-1 mr-1 rounded-3xl text-sm">User</button>
     </div>
 </div>

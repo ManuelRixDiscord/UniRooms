@@ -4,6 +4,7 @@ import { ChatsComponent } from './chats/chats.component';
 import { GroupsComponent } from './groups/groups.component';
 import { HomeComponent } from './home/home.component';
 import { SettingsComponent } from './settings/settings.component';
+import { UserAreaComponent } from './user-area/user-area.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'settings',
     component:SettingsComponent
+  },
+  {
+    path:'user-area',
+    component:UserAreaComponent
   }
 ];
 

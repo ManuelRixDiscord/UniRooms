@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ChatsComponent } from './chats/chats.component';
 import { GroupsComponent } from './groups/groups.component';
 import { SettingsComponent } from './settings/settings.component';
+import { UserAreaComponent } from './user-area/user-area.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SettingsComponent } from './settings/settings.component';
     ChatsComponent,
     GroupsComponent,
     SettingsComponent,
+    UserAreaComponent,
   ],
   imports: [
     BrowserModule,
